@@ -1,6 +1,6 @@
 package com.cards.engine;
 
-import com.cards.engine.entities.Cost;
+import com.cards.engine.resources.Cost;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

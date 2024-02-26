@@ -1,4 +1,4 @@
-package com.cards.engine.entities;
+package com.cards.engine.resources;
 
 public class Cost {
     private final int colorless; // Represents a generic cost that can be paid with any color

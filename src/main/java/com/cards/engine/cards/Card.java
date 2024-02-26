@@ -1,9 +1,13 @@
-package com.cards.engine.entities;
+package com.cards.engine.cards;
 
-import com.cards.engine.CardInterfaces.Activatable;
-import com.cards.engine.CardInterfaces.Playable;
+import com.cards.engine.cards.CardInterfaces.Activatable;
+import com.cards.engine.cards.CardInterfaces.Playable;
+import com.cards.engine.places.Place;
+import com.cards.engine.resources.Colour;
+import com.cards.engine.resources.Cost;
 
-public abstract class Card implements Activatable, Playable {
+public abstract class
+Card implements Activatable, Playable {
     private Colour colour;
     private Cost cost;
     private CardType type1;

@@ -1,4 +1,4 @@
-package com.cards.engine.CardInterfaces;
+package com.cards.engine.cards.CardInterfaces;
 
 public interface Activatable {
     public boolean activable = false;

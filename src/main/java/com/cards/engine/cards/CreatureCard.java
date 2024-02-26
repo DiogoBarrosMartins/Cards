@@ -1,6 +1,10 @@
- package com.cards.engine.entities;
+ package com.cards.engine.cards;
 
-public class CreatureCard extends Card {
+ import com.cards.engine.places.Place;
+ import com.cards.engine.resources.Colour;
+ import com.cards.engine.resources.Cost;
+
+ public class CreatureCard extends Card {
     private int power;
     private int toughness;
 

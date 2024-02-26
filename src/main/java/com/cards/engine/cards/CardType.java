@@ -1,4 +1,4 @@
-package com.cards.engine.entities;
+package com.cards.engine.cards;
 
 public enum CardType {
     CREATURE,

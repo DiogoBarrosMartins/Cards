@@ -1,4 +1,4 @@
-package com.cards.engine.entities;
+package com.cards.engine.places;
 public enum Place {
     HAND,
     BATTLEFIELD,

@@ -1,4 +1,4 @@
-package com.cards.engine.CardInterfaces;
+package com.cards.engine.cards.CardInterfaces;
 
 public interface Playable {
     public boolean playable=false;
