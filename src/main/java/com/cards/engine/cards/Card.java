@@ -8,6 +8,7 @@ import com.cards.engine.resources.Cost;
 
 public abstract class
 Card implements Activatable, Playable {
+    private String name;
     private Colour colour;
     private Cost cost;
     private CardType type1;
@@ -54,5 +55,13 @@ Card implements Activatable, Playable {
 
     public void setPlace(Place place) {
         this.place = place;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

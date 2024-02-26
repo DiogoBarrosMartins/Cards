@@ -1,7 +1,10 @@
 package com.cards.engine.cards.CardInterfaces;
 
+import com.cards.engine.cards.Ability;
+import com.cards.engine.turn.Step;
+
 public interface Activatable {
-    public boolean activable = false;
-    public boolean isActivatable();
-    public void activate();
+    boolean activable = false;
+    boolean isActivatableOnStep(Step step);
+    void activateAbility(Ability ability);
 }
