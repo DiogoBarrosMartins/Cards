@@ -9,13 +9,13 @@ import com.cards.engine.turn.Step;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GameEngine {
+public class GameService {
     private List<Player> players;
     private TurnService turnService;
     private StepService stepService;
     private CardService cardService;
 
-    public GameEngine() {
+    public GameService() {
         this.players = new ArrayList<>();
         // Initialize card manager with all available cards
         this.cardService = new CardService();

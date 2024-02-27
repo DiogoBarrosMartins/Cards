@@ -8,7 +8,6 @@ public class Turn {
         private Step currentStep;
 
         public Turn() {
-            // Assuming ManaPool's constructor without parameters initializes all mana types to 0
             this.manaPool = new ManaPool();
             this.currentStep = Step.UNTAP;
         }

@@ -1,7 +1,6 @@
 package com.cards.engine.services;
 
-import com.cards.engine.cards.Card;
-import com.cards.engine.game.GameEngine;
+import com.cards.engine.game.GameService;
 import com.cards.engine.game.Player;
 import com.cards.engine.turn.Step;
 
@@ -10,10 +9,10 @@ import java.util.EnumMap;
 public class StepService {
     private Step currentStep;
     private final TurnService turnService;
-    private final GameEngine gameEngine; // Assuming a central game engine class exists
+    private final GameService gameEngine; // Assuming a central game engine class exists
     private EnumMap<Step, Runnable> stepActions;
 
-    public StepService(TurnService turnService, GameEngine gameEngine) {
+    public StepService(TurnService turnService, GameService gameEngine) {
         this.turnService = turnService;
         this.gameEngine = gameEngine;
         this.currentStep = Step.UNTAP;

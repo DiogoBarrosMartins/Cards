@@ -11,7 +11,7 @@ public class TurnService {
 
     public TurnService(List<Player> players, StepService stepService) {
         this.players = players;
-        this.currentPlayerIndex = 0; // assuming starting with the first player
+        this.currentPlayerIndex = 0; // has to be replaced by a player picker
         this.stepService = stepService;
     }
 
