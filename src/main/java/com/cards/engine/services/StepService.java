@@ -46,9 +46,6 @@ public class StepService {
     }
 
     private void handleUntapStep() {
-        // Example: Untap all tapped cards for the current player
-        Player currentPlayer = turnService.getCurrentPlayer();
-        gameEngine.untapAllCards(currentPlayer);
 
     }
 
@@ -57,27 +54,21 @@ public class StepService {
     }
 
     private void handleDrawStep() {
-        // Current player draws a card
-        Player currentPlayer = turnService.getCurrentPlayer();
-        gameEngine.drawCard(currentPlayer);
+
     }
 
     private void handleMain1Step() {
-        // Main phase actions, such as playing lands, casting spells, etc.
     }
 
     private void handleEndStep() {
-        // Cleanup, end-of-turn triggers, etc.
-        // Optionally, clear mana pool at the end of the turn if rules require
+
 
     }
 
     private void handleDefaultStep() {
-        // Default action if a step doesn't have specific actions defined
     }
 
     private void checkCardActivations() {
-        // Iterate over all cards in all zones to check for activations
-
+ 
     }
 }
