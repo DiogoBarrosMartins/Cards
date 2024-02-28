@@ -9,29 +9,15 @@ import java.util.EnumMap;
 public class StepService {
     private Step currentStep;
     private final TurnService turnService;
-    private final GameService gameEngine; // Assuming a central game engine class exists
+    private final GameService gameEngine;
     private EnumMap<Step, Runnable> stepActions;
 
     public StepService(TurnService turnService, GameService gameEngine) {
         this.turnService = turnService;
         this.gameEngine = gameEngine;
-        this.currentStep = Step.UNTAP;
-        initializeStepActions();
-    }
-    private void initializeStepActions() {
-        stepActions = new EnumMap<>(Step.class);
-        stepActions.put(Step.UNTAP, this::handleUntapStep);
-        stepActions.put(Step.UPKEEP, this::handleUpkeepStep);
-        stepActions.put(Step.DRAW, this::handleDrawStep);
-        stepActions.put(Step.MAIN1, this::handleMain1Step);
-        // Add other steps as necessary
-        stepActions.put(Step.END_STEP, this::handleEndStep);
     }
 
-    public void startTurn(Player player) {
-        currentStep = Step.UNTAP;
-        proceedToNextStep();
-    }
+
 
     public void proceedToNextStep() {
         // Transition logic for moving to the next step
@@ -69,6 +55,6 @@ public class StepService {
     }
 
     private void checkCardActivations() {
- 
+
     }
 }
